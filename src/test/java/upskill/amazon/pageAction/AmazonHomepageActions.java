@@ -24,6 +24,7 @@ public class AmazonHomepageActions {
 		AmazonHomepageLocatorsObj = new AmazonHomepageLocators();
 		PageFactory.initElements(SetupDrivers.driver, AmazonHomepageLocatorsObj);
 	}
+//------Ama-01-Shoes
 	public void searchShoes() throws Exception{
 		AmazonHomepageLocatorsObj.txtbxSearch.sendKeys(ReadExcelSheet.getMapData("AmaSearch"));
 		Thread.sleep(3000);
@@ -34,14 +35,66 @@ public class AmazonHomepageActions {
 //		js.executeScript("AmazonHomepageLocatorsObj.btnSearch.click();");
 //		
 	}
-	
+//------Ama-02-BrandOutline	
 	public void searchItems(String items){
 		AmazonHomepageLocatorsObj.txtbxSearch.sendKeys(items);
 		AmazonHomepageLocatorsObj.btnSearch.click();
 		
 	}
+	public void searchShirt(){
+		AmazonHomepageLocatorsObj.txtbxSearch.sendKeys("Shirt");
+		AmazonHomepageLocatorsObj.btnSearch.click();
+	}
+////------Ama-04-Mousehover	
+	public void mousehoverPrime() throws Exception {
+		Actions actions = new Actions(SetupDrivers.driver);
+		actions.moveToElement(AmazonHomepageLocatorsObj.linkPrime);
+		actions.perform();
+		Thread.sleep(3000);
+	}
 	
-	public void seleniumWaits(){
+	public void clickTryPrime() throws Exception{
+		AmazonHomepageLocatorsObj.linkTryPrime.isEnabled();
+		AmazonHomepageLocatorsObj.linkTryPrime.click();	
+		Thread.sleep(3000);
+	}
+
+//------Ama-06-SignIn
+	public void mousehoverAccountList() throws Exception{
+		Actions actions = new Actions(SetupDrivers.driver);
+		actions.moveToElement(AmazonHomepageLocatorsObj.linkSignIn);
+		actions.perform();
+		Thread.sleep(3000);	
+	}
+	
+	public void signIn(){
+		AmazonHomepageLocatorsObj.btnSignIn.isEnabled();
+		AmazonHomepageLocatorsObj.btnSignIn.click();	
+	}
+		
+
+
+
+
+//------Ama-08-LogoClickable	
+	public void searchLaptop() throws Exception{
+		AmazonHomepageLocatorsObj.txtbxSearch.sendKeys(ReadExcelSheet.getMapData("AmaLogo"));
+		Thread.sleep(3000);
+		AmazonHomepageLocatorsObj.btnSearch.click();
+		
+	}
+	public void logoHomepage(){
+		AmazonHomepageLocatorsObj.homepageAppear.isDisplayed();	
+	}
+
+	
+
+//------Ama-10-Career
+		public void searchCareer(){
+			AmazonHomepageLocatorsObj.btnCareer.click();	
+		}
+	
+public void seleniumWaits(){
 		
 		System.out.println("Page Title  : " + SetupDrivers.driver.getTitle());							
 		
@@ -56,79 +109,6 @@ public class AmazonHomepageActions {
 						fluentWait.ignoring(NoSuchElementException.class);
 						fluentWait.withMessage("Fluent Wait Time exceeded");
 	}
-	
-	
-	public void searchShirt(){
-		AmazonHomepageLocatorsObj.txtbxSearch.sendKeys("Shirt");
-		AmazonHomepageLocatorsObj.btnSearch.click();
-	}
-	
-	public void mousehoverPrime() throws Exception {
-		Actions actions = new Actions(SetupDrivers.driver);
-		actions.moveToElement(AmazonHomepageLocatorsObj.linkPrime);
-		actions.perform();
-		Thread.sleep(3000);
-	}
-	
-	public void clickTryPrime() throws Exception{
-		AmazonHomepageLocatorsObj.linkTryPrime.isEnabled();
-		AmazonHomepageLocatorsObj.linkTryPrime.click();	
-		Thread.sleep(3000);
-	}
-	
-	public void openAllMenu() throws Exception{
-		AmazonHomepageLocatorsObj.btnClickMenu.isEnabled();
-		AmazonHomepageLocatorsObj.btnClickMenu.click();
-		Thread.sleep(2000);
-	}
-	public void amazonFresh() throws Exception{
-		AmazonHomepageLocatorsObj.linkAmazonFresh.isEnabled();
-		AmazonHomepageLocatorsObj.linkAmazonFresh.click();
-		Thread.sleep(2000);
-	}
-	public void allAmazonFresh() throws Exception{
-		AmazonHomepageLocatorsObj.linkAllFresh.isEnabled();
-		AmazonHomepageLocatorsObj.linkAllFresh.click();
-		Thread.sleep(2000);
-	}
-
-	public void mousehoverAccountList() throws Exception{
-		Actions actions = new Actions(SetupDrivers.driver);
-		actions.moveToElement(AmazonHomepageLocatorsObj.linkSignIn);
-		actions.perform();
-		Thread.sleep(3000);	
-	}
-	
-	public void signIn(){
-		AmazonHomepageLocatorsObj.btnSignIn.isEnabled();
-		AmazonHomepageLocatorsObj.btnSignIn.click();	
-	}
-	
-	
-	//Ama-10 Job Search
-	public void searchCareer(){
-		AmazonHomepageLocatorsObj.btnCareer.click();	
-	}
-	//------
-	//Ama-09-
-	public void clickHelp(){
-		AmazonHomepageLocatorsObj.btnHelp.click();
-	}
-	//---Ama-08-Logo
-	
-	public void searchLaptop() throws Exception{
-		AmazonHomepageLocatorsObj.txtbxSearch.sendKeys(ReadExcelSheet.getMapData("AmaLogo"));
-		Thread.sleep(3000);
-		AmazonHomepageLocatorsObj.btnSearch.click();
-		
-	}
-	public void logoHomepage(){
-		AmazonHomepageLocatorsObj.homepageAppear.isDisplayed();	
-	}
-	
-	
-	
-	
 	
 	
 	

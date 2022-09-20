@@ -17,9 +17,23 @@ public class RahulHomepageActions {
 	
 	public void loadRahulHomepage() throws Exception {
 		Thread.sleep(2000);
-		SetupDrivers.class.g.get("https://rahulshettyacademy.com/AutomationPractice/");
+		SetupDrivers.driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		Thread.sleep(4000);
+	}
+
+	public void switchRahulIframe() {
+		SetupDrivers.driver.switchTo().frame("iframe-name");
+	}
+
+	
+	public void clickRahulHome() {
 		
 		
 	}
+
+
+
+
+
+
 }

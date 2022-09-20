@@ -3,7 +3,7 @@ package upskill.amazon.pageElements;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AmazonCartLocators {
+public class AmazonCartDropDownLocators {
 
 	//Material Type
 		@FindBy (xpath="//p[contains(text(),'Recycled Polyester')]")

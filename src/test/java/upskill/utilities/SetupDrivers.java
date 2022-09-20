@@ -24,8 +24,7 @@ public class SetupDrivers {
 //		options.addArguments("--headless");					
 		driver = new ChromeDriver(options);					
 		driver.get("https://www.amazon.com/");				
-		//SetupDrivers.driver.switchTo().alert().dismiss();
-		//System.out.println(driver.getTitle());	
+			
 		
 	}
 	

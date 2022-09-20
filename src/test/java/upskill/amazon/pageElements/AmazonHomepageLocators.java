@@ -5,72 +5,50 @@ import org.openqa.selenium.support.FindBy;
 
 public class AmazonHomepageLocators {
 
+//------Ama-01-Shoes
 	//Search Text Box
 	@FindBy (xpath="//input[@aria-label='Search']")
 	public WebElement txtbxSearch;
-	
 	//Search Button
 	@FindBy (xpath="//input[@type='submit']")
 	public WebElement btnSearch;
-	
+
+//------Ama-04-Mousehover	
 	//Prime Link
 	@FindBy (xpath="//a[@id='nav-link-amazonprime']") 		
-	public WebElement linkPrime;
-	
-
+	public WebElement linkPrime;	
 	//Prime Try Link
 	@FindBy (xpath="//a[contains(text(),'Try Prime')]")
 	public WebElement linkTryPrime;
-
-	//Open All Menu
-	@FindBy (xpath="//a[@id='nav-hamburger-menu']")
-	public WebElement btnClickMenu;
-
 	
-	//Select Amazon Fresh
-	@FindBy (xpath="//div[contains(text(),'Amazon Fresh')]")
-	public WebElement linkAmazonFresh;
-	
-	//Select All Amazon Fresh
-	@FindBy (xpath="//a[contains(text(),'All Amazon Fresh')]")
-	public WebElement linkAllFresh;
+//------Ama-06-SignIn	
+	//Mouseover Account list
+	@FindBy (xpath="//a[@id='nav-link-accountList']")
+	public WebElement linkSignIn;
+	//Select Sign In
+	@FindBy (xpath="//a[@data-nav-ref='nav_signin']")
+	public WebElement btnSignIn;
+
+//Homepage Display-------//
+	@FindBy (xpath="//div[@id='pageContent']")
+	public WebElement displayHomepage;	
+
+//------Ama-08-LogoClickable
+	//Search for Laptop
+	@FindBy (xpath="(//span[contains(text(),'Laptop')])[1]")
+	public WebElement txtLaptop;
+	//Amazon Logo Homepage Appear
+	@FindBy (xpath="//div[@id='pageContent']")
+	public WebElement homepageAppear;	
+
+//------Ama-10-Career
+	//Click on Career
+	@FindBy (xpath="//a[contains(text(),'Careers')]")
+	public WebElement btnCareer;
 	
 	
 //	@FindBy (xpath="")
 //	public WebElement abc;
-	
-	//Mouseover Account list
-	@FindBy (xpath="//a[@id='nav-link-accountList']")
-	public WebElement linkSignIn;
-	
-	//Select Sign In
-	@FindBy (xpath="//a[@data-nav-ref='nav_signin']")
-	public WebElement btnSignIn;
-	
-	
-	@FindBy (xpath="//div[@id='pageContent']")
-	public WebElement displayHomepage;
-		
-	//Ama-10 Click on Career
-	@FindBy (xpath="//a[contains(text(),'Careers')]")
-	public WebElement btnCareer;
-	
-	//-----
-	//Ama-09-Click on Help
-	@FindBy (xpath="//a[contains(text(),'Help')]")
-	public WebElement btnHelp;
-	//----
-	//Ama-08-Search For Laptop
-	@FindBy (xpath="(//span[contains(text(),'Laptop')])[1]")
-	public WebElement txtLaptop;
-	
-	//Amazon Homepage Appear
-	@FindBy (xpath="//div[@id='pageContent']")
-	public WebElement homepageAppear;
-	
-	
-	
-	
 	
 	
 	

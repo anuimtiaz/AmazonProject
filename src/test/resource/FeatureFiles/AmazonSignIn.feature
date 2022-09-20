@@ -1,8 +1,10 @@
 @regression @smoke @Amazon-06 @E2E
 Feature: Amazon Sign In Functionality
 
+Background: 
+	Given Open Amazon Homepage
+	
 	Scenario: Amazon Sign In Functionality
-		Given Open Amazon Homepage
 		When Mousehover to Account List
 		And Click on Sign In
 		And Enter Email or Mobile Phone Number
