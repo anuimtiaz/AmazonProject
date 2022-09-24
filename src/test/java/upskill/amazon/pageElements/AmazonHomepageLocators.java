@@ -21,13 +21,7 @@ public class AmazonHomepageLocators {
 	@FindBy (xpath="//a[contains(text(),'Try Prime')]")
 	public WebElement linkTryPrime;
 	
-//------Ama-06-SignIn	
-	//Mouseover Account list
-	@FindBy (xpath="//a[@id='nav-link-accountList']")
-	public WebElement linkSignIn;
-	//Select Sign In
-	@FindBy (xpath="//a[@data-nav-ref='nav_signin']")
-	public WebElement btnSignIn;
+
 
 //Homepage Display-------//
 	@FindBy (xpath="//div[@id='pageContent']")

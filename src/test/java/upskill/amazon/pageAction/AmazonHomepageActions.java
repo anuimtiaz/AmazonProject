@@ -27,7 +27,7 @@ public class AmazonHomepageActions {
 //------Ama-01-Shoes
 	public void searchShoes() throws Exception{
 		AmazonHomepageLocatorsObj.txtbxSearch.sendKeys(ReadExcelSheet.getMapData("AmaSearch"));
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		AmazonHomepageLocatorsObj.btnSearch.click();	
 		
 //		AmazonHomepageLocatorsObj.txtbxSearch.sendKeys("Shoes");
@@ -36,14 +36,16 @@ public class AmazonHomepageActions {
 //		
 	}
 //------Ama-02-BrandOutline	
-	public void searchItems(String items){
+	public void searchItems(String items) throws Exception{
 		AmazonHomepageLocatorsObj.txtbxSearch.sendKeys(items);
 		AmazonHomepageLocatorsObj.btnSearch.click();
+		Thread.sleep(2000);
 		
 	}
-	public void searchShirt(){
-		AmazonHomepageLocatorsObj.txtbxSearch.sendKeys("Shirt");
+	public void searchShirt() throws Exception {
+		AmazonHomepageLocatorsObj.txtbxSearch.sendKeys("Shirts");
 		AmazonHomepageLocatorsObj.btnSearch.click();
+		Thread.sleep(2000);
 	}
 ////------Ama-04-Mousehover	
 	public void mousehoverPrime() throws Exception {
@@ -58,24 +60,7 @@ public class AmazonHomepageActions {
 		AmazonHomepageLocatorsObj.linkTryPrime.click();	
 		Thread.sleep(3000);
 	}
-
-//------Ama-06-SignIn
-	public void mousehoverAccountList() throws Exception{
-		Actions actions = new Actions(SetupDrivers.driver);
-		actions.moveToElement(AmazonHomepageLocatorsObj.linkSignIn);
-		actions.perform();
-		Thread.sleep(3000);	
-	}
-	
-	public void signIn(){
-		AmazonHomepageLocatorsObj.btnSignIn.isEnabled();
-		AmazonHomepageLocatorsObj.btnSignIn.click();	
-	}
 		
-
-
-
-
 //------Ama-08-LogoClickable	
 	public void searchLaptop() throws Exception{
 		AmazonHomepageLocatorsObj.txtbxSearch.sendKeys(ReadExcelSheet.getMapData("AmaLogo"));
@@ -83,15 +68,16 @@ public class AmazonHomepageActions {
 		AmazonHomepageLocatorsObj.btnSearch.click();
 		
 	}
-	public void logoHomepage(){
+	public void logoHomepage() throws Exception {
 		AmazonHomepageLocatorsObj.homepageAppear.isDisplayed();	
+		Thread.sleep(2000);
 	}
-
 	
 
 //------Ama-10-Career
-		public void searchCareer(){
+		public void searchCareer() throws Exception {
 			AmazonHomepageLocatorsObj.btnCareer.click();	
+			Thread.sleep(2000);
 		}
 	
 public void seleniumWaits(){
@@ -109,14 +95,6 @@ public void seleniumWaits(){
 						fluentWait.ignoring(NoSuchElementException.class);
 						fluentWait.withMessage("Fluent Wait Time exceeded");
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 

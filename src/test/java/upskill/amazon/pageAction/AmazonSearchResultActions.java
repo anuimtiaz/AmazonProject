@@ -20,61 +20,50 @@ public class AmazonSearchResultActions {
 		
 	}
 //------Ama-01-Shoes
-	public void verifyShoes(){
+	public void verifyShoes() throws Exception {
 	AmazonSearchResultLocatorsObj.txtShoes.isDisplayed();
+	Thread.sleep(2000);
 	
 	}
 //------Ama-02-BrandOutline
-	public void filterBrand(String brand){
+	public void filterBrand(String brand) throws Exception {
 		if(brand.equals("Adidas")){
 		AmazonSearchResultLocatorsObj.cbxBrandAdidas.click();
 		} else if(brand.equals("Under Armour")){
 			AmazonSearchResultLocatorsObj.cbxBrandUnderArmour.click();
-		} else if(brand.equals("Hanes")){
+		} else if(brand.equals("Premium Brands")){
 			AmazonSearchResultLocatorsObj.cbxBrandHanes.click();
 		} else {
 		System.out.println(" Brand not found, please implement");
 		}
+		Thread.sleep(2000);
 		}	
 
-	public void verifyBrandItems(String brand){
+	public void verifyBrandItems(String brand) throws Exception {
 		if(brand.equals("Adidas")){
 			AmazonSearchResultLocatorsObj.txtShoes.isDisplayed();
-			} else if(brand.equals("Under Armour")){
+		} else if(brand.equals("Under Armour")){
 				AmazonSearchResultLocatorsObj.txtShirts.isDisplayed();
-			} else if(brand.equals("Hanes")){
+		} else if(brand.equals("Premium Brands")){
 				AmazonSearchResultLocatorsObj.txtPants.isDisplayed();
-			} else {
-			System.out.println(" Brand not found, please implement");
-			}
+		} else {
+		System.out.println(" Brand not found, please implement");
+		}
+		Thread.sleep(2000);
 	}
-	public void selectShirt(){
+	public void selectShirt() throws Exception {
 		AmazonSearchResultLocatorsObj.linkShirt.click();
-	}
-
-//------Ama-06-SignIn
-	public void enterEmailPhone(){
-		AmazonSearchResultLocatorsObj.linkUserID.sendKeys("imtiaz.anu@gmail.com");
-	}
-	public void clickContinue(){
-		AmazonSearchResultLocatorsObj.btnContinue.click();
-	}
-	public void enterPassword(){
-		AmazonSearchResultLocatorsObj.linkPassword.sendKeys("abcd");
-	}
-	public void clickSignIn(){
-		AmazonSearchResultLocatorsObj.clickSignIn.click();
-	}
-	public void signInHomepage(){
-		AmazonSearchResultLocatorsObj.appHomepage.isDisplayed();
+		Thread.sleep(2000);
 	}
 
 //------Ama-08-LogoClickable
-	public void verifyLaptop(){
+	public void verifyLaptop() throws Exception {
 		AmazonSearchResultLocatorsObj.vfyLaptop.isDisplayed();	
+		Thread.sleep(2000);
 	}
-	public void clickLogo(){
+	public void clickLogo() throws Exception {
 		AmazonSearchResultLocatorsObj.btnLogo.click();
+		Thread.sleep(2000);
 	}
 		
 //------Ama-10-Career
@@ -90,7 +79,8 @@ public class AmazonSearchResultActions {
 		AmazonSearchResultLocatorsObj.btnJobSearch.click();	
 		Thread.sleep(2000);
 	}
-	public void jobSearchPage(){
+	public void jobSearchPage() throws Exception {
 		AmazonSearchResultLocatorsObj.jobHomepage.isDisplayed();
+		Thread.sleep(2000);
 	}
 }

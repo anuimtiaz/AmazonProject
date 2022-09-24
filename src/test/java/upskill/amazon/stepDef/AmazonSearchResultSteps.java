@@ -26,27 +26,7 @@ public class AmazonSearchResultSteps {
 	public void select_the_first_shirt_on_item_list() throws Throwable {
 		AmazonSearchResultActionsObj.selectShirt();
 	}	
-//------Ama-06-SignIn	
-	@When("^Enter Email or Mobile Phone Number$")
-	public void enter_Email_or_Mobile_Phone_Number() throws Throwable {
-		AmazonSearchResultActionsObj.enterEmailPhone();
-	}
-	@When("^Click on Continue$")
-	public void click_on_Continue() throws Throwable {
-		AmazonSearchResultActionsObj.clickContinue();
-	}
-	@When("^Enter Password$")
-	public void enter_Password() throws Throwable {
-		AmazonSearchResultActionsObj.enterPassword();
-	}
-	@When("^Click Sign-In$")
-	public void click_Sign_In() throws Throwable {
-		AmazonSearchResultActionsObj.clickSignIn();
-	}
-	@Then("^User Should Able to Sign-in and Homepage Appear$")
-	public void user_Should_Able_to_Sign_in_and_Homepage_Appear() throws Throwable {
-		AmazonSearchResultActionsObj.signInHomepage();
-	}	
+	
 	
 //------Ama-08-LogoClickable
 	@When("^Verify Laptop Page$")

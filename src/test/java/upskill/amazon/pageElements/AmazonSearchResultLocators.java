@@ -7,7 +7,7 @@ public class AmazonSearchResultLocators {
 
 //------Ama-01-Shoes
 	//Validate Shoes Items
-	@FindBy (xpath="//span[contains(text(),'shoes')]")
+	@FindBy (xpath="//span[contains(text(),'Shoes')]")
 	public WebElement txtShoes;
 
 //------Ama-02-BrandOutline
@@ -20,38 +20,17 @@ public class AmazonSearchResultLocators {
 	//Checkbox Brand Adidas
 	@FindBy (xpath="//li[@aria-label='adidas']")
 	public WebElement cbxBrandAdidas;
-	//Checkbox Brand Nike
+	//Checkbox Brand Under Armour
 	@FindBy (xpath="//li[@aria-label='Under Armour']")
 	public WebElement cbxBrandUnderArmour;
-	//Checkbox Brand Hanes
-	@FindBy (xpath="//li[@aria-label='Hanes']")
+	//Checkbox Brand 
+	@FindBy (xpath="//li[@aria-label='Premium Brands']")
 	public WebElement cbxBrandHanes;
 
 //------Ama-03-Cart
 	//Link Shirt
 	@FindBy (xpath="(//span[contains(text(),'Regular-Fit Quick-Dry Golf Polo Shirt')])[1]")
 	public WebElement linkShirt;
-	
-
-//------Ama-06-SignIn	
-	//Enter Email or Mobile Phone 
-	@FindBy (xpath="//input[@id='ap_email']")
-	public WebElement linkUserID;
-	//Click on Continue
-	@FindBy (xpath="//input[@id='continue']")
-	public WebElement btnContinue;
-	//Enter Password
-	@FindBy (xpath="//input[@id='ap_password']")
-	public WebElement linkPassword;
-	//Click Sign In
-	@FindBy (xpath="//input[@id='signInSubmit']")
-	public WebElement clickSignIn;
-	//User Sign In and Homepage Appear
-	@FindBy (xpath="//span[contains(text(),'Hello, Anu')]")
-	public WebElement appHomepage;
-
-
-
 	
 //------Ama-08-LogoClickable	
 	//Verify Laptop Page

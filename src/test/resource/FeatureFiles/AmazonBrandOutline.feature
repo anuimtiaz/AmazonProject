@@ -16,4 +16,4 @@ Scenario Outline: Filter items by Brand
 		|Items			|Brand			|
 		|Shoes			|Adidas			|
 		|Shirts			|Under Armour	|
-		|Pants			|Hanes			|
+		|Pants			|Premium Brands	|

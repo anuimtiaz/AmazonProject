@@ -35,15 +35,6 @@ public class AmazonHomepageSteps {
 	public void click_on_Try_Prime() throws Throwable {
 		AmazonHomepageActionsObj.clickTryPrime();
 	}
-//------Ama-06-SignIn
-	@When("^Mousehover to Account List$")
-	public void mousehover_to_Account_List() throws Throwable {
-		AmazonHomepageActionsObj.mousehoverAccountList();
-	}
-	@When("^Click on Sign In$")
-	public void click_on_Sign_In() throws Throwable {
-		AmazonHomepageActionsObj.signIn();
-	}
 
 //------Ama-08-LogoClickable
 	@When("^Search for Laptop$")

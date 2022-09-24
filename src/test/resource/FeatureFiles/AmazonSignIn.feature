@@ -9,6 +9,6 @@ Background:
 		And Click on Sign In
 		And Enter Email or Mobile Phone Number
 		And Click on Continue
-		And Enter  Wrong Password
+		And Enter Password
 		And Click Sign-In
-		Then Wrong Password Alert Page Should Appear
+		Then User Should Able to Sign-in and Homepage Appear
