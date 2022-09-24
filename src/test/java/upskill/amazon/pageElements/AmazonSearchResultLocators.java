@@ -29,7 +29,7 @@ public class AmazonSearchResultLocators {
 
 //------Ama-03-Cart
 	//Link Shirt
-	@FindBy (xpath="(//span[contains(text(),'Regular-Fit Quick-Dry Golf Polo Shirt')])[1]")
+	@FindBy (xpath="(//h2[@class='a-size-mini a-spacing-none a-color-base s-line-clamp-2'])[26]")
 	public WebElement linkShirt;
 	
 //------Ama-08-LogoClickable	
