@@ -44,7 +44,7 @@ public class RahulHomepageActions {
 		}
 		}
 	}
-	
+
 	public void verifyRahul() throws Exception {
 		Thread.sleep(3000);
 		RahulHomepageLocatorsObj.btnHome.isDisplayed();
@@ -52,6 +52,13 @@ public class RahulHomepageActions {
 		
 	}
 
+	
+	
+	
+	
+	
+	
+	
 	public void handleIframe(){
 		
 		//i find iframe using iframe tag in DOM or HTML
